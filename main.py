@@ -1,4 +1,6 @@
 import socket
+import threading
+
 import handler
 
 SERVER_HOST = '0.0.0.0'
@@ -12,5 +14,8 @@ print('ACTIVE PORT => %s' % SERVER_PORT)
 
 while True:    
     clientConnection, clientAddress = serverSocket.accept()
-    handler.handleClient(clientConnection,clientAddress)
+
+    thread = threading.Thread(target= handler.handleClient, args=(clientConnection, clientAddress))
+    thread.start()
+
 
