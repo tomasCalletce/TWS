@@ -1,5 +1,6 @@
 from requestHandelers.GEThandler import getHandle
-from utils.postUtils import extract_body
+from requestHandelers.POSThandler import postHandle
+from requestHandelers.HEADhandler import headHandle
 
 def handleClient(clientConnection, clientAddress):
     # print('NEW CONNECTION => from %s:%s' % (clientConnection, clientAddress))
@@ -12,27 +13,11 @@ def handleClient(clientConnection, clientAddress):
 
     if request.startswith("GET"):
         response = getHandle(arr)
-    # elif request.startswith("POST"):
-    #     try:
-    #         reqbody = extract_body(arr)
-    #         if arr[1] == "/createUser":#Caso 1
-    #             print("Creating User...")
-    #             if "Nombre" not in reqbody:
-    #                 response = 'HTTP/1.0 400 Bad Request\n\n'
-    #             else:
-    #                 print(reqbody["Nombre"])
-    #         else:
-    #             response = 'HTTP/1.0 404 Page/File Not Found\n\n'
-    #     except e :
-    #         reponse='HTTP/1.0 400 Bad Request\n\n'
-    # elif request.startswith("HEAD"):
-    #     if arr[1] != "/tomas" and arr[1] != '/juan' :#Caso 1
-    #         response = 'HTTP/1.0 404 Page/File Not Found\n\n'
-    else:
-        messege = 'HTTP/1.0 400 Bad Request\n\n'
-        response = messege.encode('utf-8')
+    elif request.startswith("POST"):
+        response = postHandle(arr)
+    elif request.startswith("HEAD"):
+        response = headHandle(arr)
 
-    # para hacer test usa postman con el link http://localhost:8000. no importa el request type.
     clientConnection.sendall(response)
     clientConnection.close()
 
