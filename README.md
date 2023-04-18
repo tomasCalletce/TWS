@@ -31,5 +31,6 @@ handler.py: Este archivo se encarga de filtrar las peticiones para ser procesada
 Estamos muy felices con los resultados del proyecto. logramos escribir código organizado y legible. También fue super interesante ver cómo realmente funciona un servidor web porque hasta la fecha solo habían usando librerías como flash o express.
 
 ## iv. Referencias 
-https://www.codementor.io/@joaojonesventura/building-a-basic-http-server-from-scratch-in-python-1cedkg0842
-GPT-4 
+-https://www.codementor.io/@joaojonesventura/building-a-basic-http-server-from-scratch-in-python-1cedkg0842
+
+-GPT-4 
