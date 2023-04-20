@@ -10,7 +10,8 @@ GET:
 /page_four -> página con una descarga de un archivo grande y múltiples imágenes /image_user_one -> imagen del usuario 1 
 /image_user_two -> imagen del usuario 2 
 /bigfile -> documento .txt de más de 1 MB 
-
+<-----IP PÚBLICA------>
+http://3.19.26.168/
 POST:
 /createUser -> punto final para crear un usuario. Asegúrese de enviar el cuerpo con la siguiente información:
  { "Nombre": <nombre del usuario> }
