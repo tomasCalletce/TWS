@@ -19,7 +19,8 @@ POST:
 /image_user_one -> verificar la existencia de este archivo en el servidor 
 /image_user_two -> verificar la existencia de este archivo en el servidor 
 
-## ii. Desarrollo: Conforme a las instrucciones del proyecto, este código no utiliza librerías externas aparte de sys, os, time, socket y thread. El código se organiza en tres partes principales: 
+## ii. Desarrollo: 
+Conforme a las instrucciones del proyecto, este código no utiliza librerías externas aparte de sys, os, time, socket y thread. El código se organiza en tres partes principales: 
 
 main.py: En este archivo, se asigna el puerto al que se va a escuchar y se escribe el código que crea un nuevo thread por cada nueva solicitud. 
 
@@ -31,6 +32,5 @@ handler.py: Este archivo se encarga de filtrar las peticiones para ser procesada
 Estamos muy felices con los resultados del proyecto. logramos escribir código organizado y legible. También fue super interesante ver cómo realmente funciona un servidor web porque hasta la fecha solo habían usando librerías como flash o express.
 
 ## iv. Referencias 
--https://www.codementor.io/@joaojonesventura/building-a-basic-http-server-from-scratch-in-python-1cedkg0842
-
--GPT-4 
+1.https://www.codementor.io/@joaojonesventura/building-a-basic-http-server-from-scratch-in-python-1cedkg0842
+2.GPT4 
