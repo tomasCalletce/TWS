@@ -4,7 +4,7 @@ import threading
 import handler
 
 SERVER_HOST = '0.0.0.0'
-SERVER_PORT = 8000
+SERVER_PORT = 80
 
 #AF_INET == IPv6 Socket type Sock_Stream (Streams using TCP transportation protocol)
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
