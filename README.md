@@ -5,10 +5,15 @@
 
 GET: 
 /page_one -> página con una imagen 
+
 /page_two -> página con múltiples imágenes
+
  /page_three -> página con una descarga de un archivo grande 
+
 /page_four -> página con una descarga de un archivo grande y múltiples imágenes /image_user_one -> imagen del usuario 1 
+
 /image_user_two -> imagen del usuario 2 
+
 /bigfile -> documento .txt de más de 1 MB 
 
 <-----IP PÚBLICA------>
@@ -18,7 +23,8 @@ POST:
  { "Nombre": <nombre del usuario> }
 
  HEAD 
-/image_user_one -> verificar la existencia de este archivo en el servidor 
+/image_user_one -> verificar la existencia de este archivo en el servidor
+ 
 /image_user_two -> verificar la existencia de este archivo en el servidor 
 
 ## ii. Desarrollo: 
