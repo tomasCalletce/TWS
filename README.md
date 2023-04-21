@@ -16,15 +16,19 @@ GET:
 
 /bigfile -> documento .txt de más de 1 MB 
 
+
 <-----IP PÚBLICA------>
 http://3.19.26.168/
+
+
 POST:
+
 /createUser -> punto final para crear un usuario. Asegúrese de enviar el cuerpo con la siguiente información:
  { "Nombre": <nombre del usuario> }
 
  HEAD 
 /image_user_one -> verificar la existencia de este archivo en el servidor
- 
+
 /image_user_two -> verificar la existencia de este archivo en el servidor 
 
 ## ii. Desarrollo: 
