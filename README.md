@@ -10,6 +10,7 @@ GET:
 /page_four -> página con una descarga de un archivo grande y múltiples imágenes /image_user_one -> imagen del usuario 1 
 /image_user_two -> imagen del usuario 2 
 /bigfile -> documento .txt de más de 1 MB 
+
 <-----IP PÚBLICA------>
 http://3.19.26.168/
 POST:
@@ -35,3 +36,6 @@ Estamos muy felices con los resultados del proyecto. logramos escribir código o
 ## iv. Referencias 
 1.https://www.codementor.io/@joaojonesventura/building-a-basic-http-server-from-scratch-in-python-1cedkg0842
 2.GPT4 
+
+
+
